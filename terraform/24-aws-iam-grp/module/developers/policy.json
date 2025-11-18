@@ -1,0 +1,28 @@
+{
+"Version":"2012-10-17",
+"Statement": [
+	{
+		"Effect":"Allow",
+		"Action":[
+			"ec2:Describe*",
+			"ec2:StartInstances",
+			"ec2:StopInstances",
+			"s3:PutObject",
+			"s3:GetObject"
+		],
+		"Resource":"*"
+	},
+	{
+		"Effect":"Deny",
+		"Action": [
+			"ec2:TerminateInstances"
+		],
+		"Resource":"*"
+	}
+]
+}
+
+
+
+
+

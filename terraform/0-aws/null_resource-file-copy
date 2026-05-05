@@ -1,0 +1,12 @@
+resource "null_resource" "provisioner" {
+        provisioner "file" {
+        source="/home/ubuntu/terra/deleter.sh"
+        destination="/tmp/important.file"
+}
+connection {
+        type="ssh"
+        user="ec2-user"
+        host="3.110.182.194"
+        private_key=file("/home/ubuntu/terra/test.pem")
+}
+}

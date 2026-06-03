@@ -1,0 +1,2 @@
+terraform import 'aws_iam_user.c ["sad"]' sad
+  #ek sath 3, 4 names add nai hoenge ek ek kr k he add krna hoga. Nai toh script create krna hoga.

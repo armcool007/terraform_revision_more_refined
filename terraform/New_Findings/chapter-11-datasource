@@ -1,0 +1,12 @@
+data "aws_instance" "get" {
+}
+
+output "all" {
+  value=data.aws_instance.get.*
+}
+
+data "aws_vpc" "all" {}
+
+output "all_available_vpc" {
+  value=data.aws_vpc.all.*
+}

@@ -1,0 +1,12 @@
+# vi datasorucecapture
+data "aws_instance" "all"{
+  filter {
+    name="instance-type"
+    values=["t3.micro"]
+  }
+}
+
+output "allusers" {
+  value=data.aws_instance.all.tags["Name"]
+}
+

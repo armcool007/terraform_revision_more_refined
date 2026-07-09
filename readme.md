@@ -4,3 +4,7 @@
 
 # aws ec2 describe-instances help
 - Isme "**Filters**" section mein saare valid filter names table format mein milte hain — kyunki Terraform ka filter block seedha isi API ko call karta hai.
+
+# aws describe-instances filters
+- Google karein: "aws describe-instances filters" → aapko yeh page milega:
+👉 AWS EC2 API Reference → DescribeInstances → Filters

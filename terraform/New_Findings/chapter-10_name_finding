@@ -10,3 +10,13 @@ output "allusers" {
   value=data.aws_instance.all.tags["Name"]
 }
 
+#--------------------------------------------------------------------------------------------------------------------------------------
+
+# vi allsubnets.tf
+data "aws_subnets" "all"{
+}
+
+output "allusers" {
+  value=data.aws_subnets.all.tags["Name"]
+}
+
